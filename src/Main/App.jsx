@@ -1,4 +1,3 @@
-
 import './App.css'
 import React from 'react'
 
@@ -7,33 +6,15 @@ import Nav from '../components/template/Nav'
 import Main from '../components/template/Main'
 import Footer from '../components/template/Footer'
 
-export default props =>
+import Formulario from './Formulario'
+
+export default props =>(
   <div className="app">
-         <Logo />
-         <Nav />     
-         <Main title="Início" subtitle="Realize o Cadastro"
-
-
-
-              
-         
-             
-           
-    
-         
-
-         />
-         <Footer />
+    <Logo/>
+    <Nav/>
+    <Main title="Início" subtitle="Realize o Cadastro">
+      <Formulario />
+    </Main>
+    <Footer/>
   </div>
-
-class Input extends React.Component {
-  render() {
-         return (
-        <div>
-           Nome: <input name="nome" type="text" />
-
-        </div>
-         );
-
-  }
-}
+);
