@@ -5,7 +5,6 @@ import Home from  '../../assets/imgs/icons8-casa-50.png'
 export default props =>
  <header className="header flex-column">
        <h2 className="mt-3">
-         <img src={Home} al="Home" /> {props.title} 
+         <img src={Home} al="Home" /> {props.title}
        </h2>
-       <p><i>{props.subtitle}</i> </p>
  </header>
